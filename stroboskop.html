@@ -20,7 +20,12 @@
 			<td style="width: calc(100% - 20px);" >
 				<span id="barve"></span> 
 				<input class="rob senca" id="novaBarva" type="button" value="Dodaj barvo" />
-				<input class="rob senca" id="odstraniBarve" type="button" value="Odstrani barve" />
+				<input class="rob senca" id="odstraniBarve" onclick="izbrisiBarve()" type="button" value="Odstrani barve" />
+				<script>
+				function izbrisiBarve() {
+    				document.getElementById("barve").innerHTML="";
+				}
+				</script>
 			</td>
 			<td rowspan="2" style="width: 300px;">
 				<button id="start">Zaženi stroboskop</button>
@@ -36,6 +41,7 @@
 			</td>
 
 		</tr>
+		
 	</table>
 </glava>
 
